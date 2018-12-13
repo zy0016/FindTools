@@ -1,0 +1,185 @@
+# Microsoft Developer Studio Generated Dependency File, included by FindTools.mak
+
+.\ButtonEx.cpp : \
+	".\ButtonEx.h"\
+	".\FindTools.h"\
+	
+
+.\CreditStatic.CPP : \
+	".\CreditStatic.H"\
+	
+
+.\EditExt.cpp : \
+	".\EditExt.h"\
+	".\FindTools.h"\
+	
+
+.\FindChinese.cpp : \
+	".\ButtonEx.h"\
+	".\EditExt.h"\
+	".\FileInfo.h"\
+	".\FindChinese.h"\
+	".\FindChineseEx.h"\
+	".\FindChineseFile.h"\
+	".\FindChineseFold.h"\
+	".\FindChineseFunc.h"\
+	".\FindTools.h"\
+	".\ListBoxExt.h"\
+	".\ListCtrlExt.h"\
+	".\MyProgressCtrl.h"\
+	".\SortHeaderCtrl.h"\
+	".\SortListCtrl.h"\
+	
+
+.\FindChineseEx.cpp : \
+	".\ButtonEx.h"\
+	".\EditExt.h"\
+	".\FileInfo.h"\
+	".\FindChinese.h"\
+	".\FindChineseEx.h"\
+	".\FindChineseFile.h"\
+	".\FindChineseFold.h"\
+	".\FindChineseFunc.h"\
+	".\FindTools.h"\
+	".\ListBoxExt.h"\
+	".\ListCtrlExt.h"\
+	".\MyProgressCtrl.h"\
+	".\SortHeaderCtrl.h"\
+	".\SortListCtrl.h"\
+	
+
+.\FindChineseFile.cpp : \
+	".\EditExt.h"\
+	".\FileInfo.h"\
+	".\FindChineseFile.h"\
+	".\FindTools.h"\
+	".\ListBoxExt.h"\
+	
+
+.\FindChineseFold.cpp : \
+	".\ButtonEx.h"\
+	".\EditExt.h"\
+	".\FileInfo.h"\
+	".\FindChineseFold.h"\
+	".\FindTools.h"\
+	".\ListCtrlExt.h"\
+	
+
+.\FindChineseFunc.cpp : \
+	".\ButtonEx.h"\
+	".\FileInfo.h"\
+	".\FindChineseFunc.h"\
+	".\FindTools.h"\
+	
+
+.\FindHelp.cpp : \
+	".\CreditStatic.H"\
+	".\FindHelp.h"\
+	".\FindTools.h"\
+	".\HyperLink.h"\
+	
+
+.\FindString.cpp : \
+	".\ButtonEx.h"\
+	".\FileInfo.h"\
+	".\FindString.h"\
+	".\FindTools.h"\
+	
+
+.\FindTools.cpp : \
+	".\ButtonEx.h"\
+	".\CreditStatic.H"\
+	".\EditExt.h"\
+	".\FileInfo.h"\
+	".\FindChinese.h"\
+	".\FindChineseEx.h"\
+	".\FindChineseFile.h"\
+	".\FindChineseFold.h"\
+	".\FindChineseFunc.h"\
+	".\FindHelp.h"\
+	".\FindString.h"\
+	".\FindTools.h"\
+	".\FindToolsDlg.h"\
+	".\HyperLink.h"\
+	".\ListBoxExt.h"\
+	".\ListCtrlExt.h"\
+	".\MacroTool.h"\
+	".\MyProgressCtrl.h"\
+	".\SortHeaderCtrl.h"\
+	".\SortListCtrl.h"\
+	
+
+.\FindTools.rc : \
+	".\res\bitmap1.bmp"\
+	".\res\FILENEW.BMP"\
+	".\res\FindTools.ico"\
+	".\res\FindTools.rc2"\
+	".\res\ZOOM.BMP"\
+	
+
+.\FindToolsDlg.cpp : \
+	".\ButtonEx.h"\
+	".\CreditStatic.H"\
+	".\EditExt.h"\
+	".\FileInfo.h"\
+	".\FindChinese.h"\
+	".\FindChineseEx.h"\
+	".\FindChineseFile.h"\
+	".\FindChineseFold.h"\
+	".\FindChineseFunc.h"\
+	".\FindHelp.h"\
+	".\FindString.h"\
+	".\FindTools.h"\
+	".\FindToolsDlg.h"\
+	".\HyperLink.h"\
+	".\ListBoxExt.h"\
+	".\ListCtrlExt.h"\
+	".\MacroTool.h"\
+	".\MyProgressCtrl.h"\
+	".\SortHeaderCtrl.h"\
+	".\SortListCtrl.h"\
+	
+
+.\HyperLink.cpp : \
+	".\FindTools.h"\
+	".\HyperLink.h"\
+	
+
+.\ListBoxExt.cpp : \
+	".\EditExt.h"\
+	".\FindTools.h"\
+	".\ListBoxExt.h"\
+	
+
+.\ListCtrlExt.cpp : \
+	".\ButtonEx.h"\
+	".\EditExt.h"\
+	".\FindTools.h"\
+	".\ListCtrlExt.h"\
+	
+
+.\MacroTool.cpp : \
+	".\FindTools.h"\
+	".\MacroTool.h"\
+	".\MyProgressCtrl.h"\
+	
+
+.\MyProgressCtrl.cpp : \
+	".\MyProgressCtrl.h"\
+	
+
+.\SortHeaderCtrl.cpp : \
+	".\FindTools.h"\
+	".\SortHeaderCtrl.h"\
+	
+
+.\SortListCtrl.cpp : \
+	".\FindTools.h"\
+	".\SortHeaderCtrl.h"\
+	".\SortListCtrl.h"\
+	
+
+.\StdAfx.cpp : \
+	"..\..\..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	".\StdAfx.h"\
+	

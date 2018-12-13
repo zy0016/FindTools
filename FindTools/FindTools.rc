@@ -1,0 +1,457 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\FindTools.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\FindTools.ico"
+FINDTOOLS_ICON          ICON    DISCARDABLE     "res\\Find.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 FindTools"
+FONT 9, "宋体"
+BEGIN
+    ICON            FINDTOOLS_ICON,IDC_STATIC,11,17,20,20
+    LTEXT           "FindTools Alpha 1.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "聪明的猪 版权所有 (C) 2004",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_FINDTOOLS_DIALOG DIALOGEX 0, 0, 547, 435
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "FindTools"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "永远在前(&T)",IDC_CHECK_FRONT,"Button",BS_AUTOCHECKBOX | 
+                    BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,7,415,13,13
+    PUSHBUTTON      "关闭(&C)",IDCANCEL,493,415,50,14
+    PUSHBUTTON      "",IDC_BUTTON_TUDING,108,418,11,10
+    CONTROL         "",IDC_CHECK_TUDING,"Button",BS_AUTOCHECKBOX | BS_BITMAP | 
+                    BS_PUSHLIKE | WS_TABSTOP,35,415,13,13
+END
+
+IDD_DIALOG_FINDCHINESE DIALOG DISCARDABLE  0, 0, 534, 390
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "FindChinese"
+FONT 9, "宋体"
+BEGIN
+    COMBOBOX        IDC_COMBO_SELECTFOLD,100,21,154,138,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "…",IDC_BUTTON_SELECTFOLD,258,22,15,12
+    CONTROL         "包括子目录(&B)",IDC_CHECK_SUBFOLD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,276,23,64,10
+    DEFPUSHBUTTON   "开始扫描(&S)",IDC_BUTTON_SCANING,345,20,60,15
+    PUSHBUTTON      "设置字体(&F)",IDC_BUTTON_SETFONT,410,20,55,15
+    PUSHBUTTON      "例外项(&E)...",IDC_BUTTON_EXCEPTION,470,20,55,15
+    CONTROL         "List1",IDC_LIST_FILELIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,10,55,515,105
+    CONTROL         "",IDC_RICHEDIT_PREVIEW,"RICHEDIT",ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | WS_BORDER | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP,10,165,515,215
+    GROUPBOX        "中文字符查找工具",IDC_STATIC,3,3,527,382
+    LTEXT           "",IDC_STATIC_RESULT,181,40,165,10
+    LTEXT           "用鼠标单击下边列表框中的项目就可以预览代码",
+                    IDC_STATIC_CLEW,10,40,170,10
+    CONTROL         "Progress1",IDC_PROGRESS_FINDCHINESE,"msctls_progress32",
+                    PBS_SMOOTH | WS_BORDER,345,40,180,10
+    LTEXT           "输入或选择扫描目录(&O):",IDC_STATIC_SEARCHFOLD,10,24,90,
+                    10
+END
+
+IDD_DIALOG_FINDSTRING DIALOG DISCARDABLE  0, 0, 534, 390
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "FindString"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_PREFIX,160,22,70,15,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "选择目录(&F)...",IDC_BUTTON_SELECTFOLD,10,22,65,15
+    CONTROL         "快速扫描(扫描结果可能会有遗漏)(&Q)",IDC_CHECK_FAST,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,235,25,145,10
+    EDITTEXT        IDC_EDIT_STRING,10,60,515,320,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    GROUPBOX        "无用的字符串查找工具",IDC_STATIC,3,3,527,382
+    LTEXT           "请输入字符串前缀(&P):",IDC_STATIC,80,26,80,8
+    LTEXT           "",IDC_STATIC_USEDTIMER,390,25,135,10
+    EDITTEXT        IDC_EDIT_FILES,10,40,515,15,ES_MULTILINE | ES_READONLY | 
+                    NOT WS_BORDER
+END
+
+IDD_DIALOG_MACROTOOL DIALOG DISCARDABLE  0, 0, 534, 390
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "MacroTool"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "请输入宏的名字:",IDC_STATIC,10,22,65,10
+    GROUPBOX        "扫描代码里的项目宏定义工具",IDC_STATIC,3,3,527,382
+    EDITTEXT        IDC_EDIT_MACRO,75,20,110,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "选择文件(&S)...",IDC_BUTTON_SELECTFILE,190,20,65,15
+    PUSHBUTTON      "字体设置(&F)",IDC_BUTTON_SETFONT,260,20,65,15
+    CONTROL         "List1",IDC_LIST_MACRO_LISTFILE,"SysListView32",
+                    LVS_REPORT | WS_BORDER | WS_TABSTOP,10,40,515,75
+    LTEXT           "用鼠标单击列表中的文件进行预览(变色部分的代码将不会出现在代码输出文件中)",
+                    IDC_STATIC,10,120,300,10
+    CONTROL         "",IDC_RICHEDIT_PREVIEW,"RICHEDIT",ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | WS_BORDER | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP,10,135,515,245
+    PUSHBUTTON      "输出单个文件(&O)",IDC_BUTTON_SINGLE,330,20,65,15
+    PUSHBUTTON      "全部输出(&A)",IDC_BUTTON_ALL,400,20,65,15
+    PUSHBUTTON      "上(&U)",IDC_BUTTON_UP,470,20,25,15
+    PUSHBUTTON      "下(&D)",IDC_BUTTON_DOWN,500,20,25,15
+    CONTROL         "Progress1",IDC_PROGRESS_MACRO,"msctls_progress32",
+                    PBS_SMOOTH | WS_BORDER,310,120,215,10
+END
+
+IDD_DIALOG_HELP DIALOG DISCARDABLE  0, 0, 534, 390
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "帮助"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "给我发信吧,举报bug有奖!",IDC_STATIC_EMAIL,15,192,103,9
+    LTEXT           "版权所有:聪明的猪 2004年3月",IDC_STATIC,15,165,115,10
+    LTEXT           "Static",IDC_STATIC_HELP,225,15,305,370,SS_SUNKEN
+END
+
+IDD_DIALOG_FINDCHINESEEX DIALOG DISCARDABLE  0, 0, 250, 265
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "例外项"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,140,245,50,14
+    PUSHBUTTON      "取消",IDCANCEL,195,245,50,14
+END
+
+IDD_DIALOG_FINDCHINESE_FUNC DIALOG DISCARDABLE  0, 0, 237, 219
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "不参加扫描的函数"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_FINDCHINESEFUNC,10,45,165,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "添加(&A)",IDC_BUTTON_FINDCHINESEFUNC_ADD,180,45,55,15
+    PUSHBUTTON      "删除(&D)",IDC_BUTTON_FINDCHINESEFUNC_DEL,180,65,55,15
+    LISTBOX         IDC_LIST_FINDCHINESEFUNC,10,65,165,145,
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "如果中文字符位于以下函数之中的话,那么该行代码将不会出现在扫描结果的列表中.",
+                    IDC_STATIC,10,5,165,15
+    LTEXT           "新函数(&F):",IDC_STATIC,10,34,45,10
+END
+
+IDD_DIALOG_FINDCHINESE_FILE DIALOG DISCARDABLE  0, 0, 237, 215
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "不参加扫描的文件"
+FONT 9, "宋体"
+BEGIN
+    LISTBOX         IDC_LIST_FINDCHINESEEXT_FILE,10,20,220,190,
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+    CTEXT           "以下文件将不会参加中文字符的扫描",IDC_STATIC,10,5,220,
+                    10
+END
+
+IDD_DIALOG_FINDCHINESE_FOLD DIALOG DISCARDABLE  0, 0, 237, 215
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "不参加扫描的目录"
+FONT 9, "宋体"
+BEGIN
+    CTEXT           "以下目录中的文件将不会参加中文字符的扫描",IDC_STATIC,5,
+                    5,225,10
+    CONTROL         "List1",IDC_LIST_FINDCHINESE_FOLD,"SysListView32",
+                    LVS_REPORT | LVS_SINGLESEL | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,10,20,220,190
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "代码里中文字符查找工具,字符串查找工具,代码宏工具\0"
+            VALUE "CompanyName", "Hopen\0"
+            VALUE "FileDescription", "FindTools 应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "FindTools\0"
+            VALUE "LegalCopyright", "聪明的猪 版权所有 (C) 2004年 3 - 7月\0"
+            VALUE "LegalTrademarks", "没有商标\0"
+            VALUE "OriginalFilename", "FindTools.EXE\0"
+            VALUE "PrivateBuild", "Alpha 1.0\0"
+            VALUE "ProductName", "FindTools 应用程序\0"
+            VALUE "ProductVersion", "1.0版\0"
+            VALUE "SpecialBuild", "不搞特殊化\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_FINDTOOLS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 540
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 428
+    END
+
+    IDD_DIALOG_FINDCHINESE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 527
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 383
+    END
+
+    IDD_DIALOG_FINDSTRING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 527
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 383
+    END
+
+    IDD_DIALOG_MACROTOOL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 527
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 383
+    END
+
+    IDD_DIALOG_HELP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 527
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 383
+    END
+
+    IDD_DIALOG_FINDCHINESEEX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 258
+    END
+
+    IDD_DIALOG_FINDCHINESE_FUNC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 212
+    END
+
+    IDD_DIALOG_FINDCHINESE_FILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_DIALOG_FINDCHINESE_FOLD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+CG_IDR_POPUP_MACRO_TOOL MENU DISCARDABLE 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "输出单个文件(&O)",            ID_MENU_SINGLEOUT
+        MENUITEM "删除文件(&D)",                ID_MENU_DELETE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_DELETE       BITMAP  DISCARDABLE     "res\\ZOOM.BMP"
+IDB_BITMAP_SINGLEOUT    BITMAP  DISCARDABLE     "res\\FILENEW.BMP"
+IDB_BITMAP5             BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_BITMAP_DEL          BITMAP  DISCARDABLE     "res\\del.bmp"
+IDB_BITMAP_NEW          BITMAP  DISCARDABLE     "res\\new.bmp"
+IDB_BITMAP_TD2          BITMAP  DISCARDABLE     "res\\pin4.bmp"
+IDB_BITMAP_TD4          BITMAP  DISCARDABLE     "res\\pin2.bmp"
+IDB_BITMAP_TD1          BITMAP  DISCARDABLE     "res\\pin3.bmp"
+IDB_BITMAP_TD5          BITMAP  DISCARDABLE     "res\\pin1.bmp"
+IDB_BITMAP_TD3          BITMAP  DISCARDABLE     "res\\pin5.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 FindTools(&A)..."
+    IDS_STRING_FILENAME     "文件名"
+    IDS_STRING_CHINESELINE  "中文所在行"
+    IDS_STRING_CODEPREVIEW  "代码预览"
+    IDS_STRING_FONT         "宋体"
+    IDS_STRING_STOPCLEW     "当前正在扫描文件,您确定停止吗?"
+    IDS_STRING_CLEW         "FindTools"
+    IDS_STRING_SELECTFOLD   "选择目录(&F)..."
+    IDS_STRING_DSELECTFOLD  "选择目录并按下[确定]按钮"
+    IDS_STRING_STOP         "停止(&T)"
+    IDS_STRING_SCANRESULT   "文件名\t\t\t\t中文所在行\t代码预览\r\n"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_SCANING      "正在扫描:"
+    IDS_STRING_RESULT       "当前扫描%d个文件,代码中共有%d处中文."
+    IDS_STRING_CHECKCLEW    "快速扫描的时候只考察字符串是否在代码文件中出现过,即使字符串在注释范围之内,也认为该字符串被使用过,所以扫描的结果可能会遗漏一些字符串,但是这样做扫描速度较快.启用快速扫描吗?"
+    IDS_STRING_BEGIN        "开始扫描(&S)"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\FindTools.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
